@@ -9,7 +9,8 @@ var ptext2 = '\"Photographs of the inaugural proceedings were intentionally fram
 var ptext3 = 'This P5.js sketch is for Spicer, to help him spot the differences in crowd sizes between Trump\'s 2017 inauguration, Obama\'s 2009 inauguration, and an empty National Mall. He can comb through the pixels of each image and discern which are people, which are grass and which are bright white floor covering.';
 
 //declare various global variables
-var cnv, h1, p1, p2, p3, pdiv;
+var gitbtn;
+var cnv, h2, p1, p2, p3, pdiv;
 var cw; //scaled canvas width
 var ch; //scaled canvas height
 var img_empty; //images
@@ -33,7 +34,7 @@ function centerCanvas() {
 }
 
 function positionPdiv() {
-    dy = cnv.height + h1.height + 25;
+    dy = gitbtn.height + cnv.height + h2.height + 40;
     pdiv.position(AUTO, dy);
 }
 
@@ -41,7 +42,8 @@ function setup() {
     cw = constrain(windowWidth, 360, 1080);
     ch = constrain(windowWidth / 2, 0, 540);
 
-    h1 = createElement('h2', 'Floor Covering Inspector 2017'); //create h1
+    h2 = createElement('h2', 'Floor Covering Inspector 2017'); //create h2
+    gitbtn = select('#gitbtn'); //select github button to get height
 
     cnv = createCanvas(cw, ch); //draw the canvas to the DOM
     centerCanvas();
