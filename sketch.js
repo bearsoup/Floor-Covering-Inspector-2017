@@ -10,7 +10,7 @@ var ptext3 = 'This P5.js sketch is for Spicer, to help him spot the differences 
 
 //declare various global variables
 var gitbtn;
-var cnv, h2, p1, p2, p3, pdiv;
+var cnv, h1, p1, p2, p3, pdiv;
 var cw; //scaled canvas width
 var ch; //scaled canvas height
 var img_empty; //images
@@ -34,7 +34,7 @@ function centerCanvas() {
 }
 
 function positionPdiv() {
-    dy = gitbtn.height + cnv.height + h2.height + 40;
+    dy = gitbtn.height + cnv.height + h1.height + 40;
     pdiv.position(AUTO, dy);
 }
 
@@ -42,7 +42,7 @@ function setup() {
     cw = constrain(windowWidth, 360, 1080);
     ch = constrain(windowWidth / 2, 0, 540);
 
-    h2 = createElement('h2', 'Floor Covering Inspector 2017'); //create h2
+    h1 = createElement('h1', 'Floor Covering Inspector 2017'); //create h1
     gitbtn = select('#gitbtn'); //select github button to get height
 
     cnv = createCanvas(cw, ch); //draw the canvas to the DOM
