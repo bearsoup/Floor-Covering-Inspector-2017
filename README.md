@@ -1,8 +1,9 @@
 # floor-covering-inspector-2017
 Made with ♥ for Sean Spicer
 
-****** Simon Boas, 2017 ******
-***** www.simonboas.com ******
+** Simon Boas, 2017 **
+
+** www.simonboas.com **
  
  In the Trump administration's first official press conference,
  White House Press Secretary Sean Spicer scolded the media for
